@@ -1,7 +1,7 @@
 package first;
 
-import main.Laba_2.second.ch2.Helper;
-import main.Laba_2.second.ch2.OrderStatisticLinear;
+import main.Helper;
+import main.OrderStatisticLinear;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;

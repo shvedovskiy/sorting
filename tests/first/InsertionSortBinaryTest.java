@@ -1,7 +1,7 @@
 package first;
 
-import main.Laba_2.second.ch2.Helper;
-import main.Laba_2.second.ch2.InsertionSortBinary;
+import main.Helper;
+import main.InsertionSortBinary;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -10,7 +10,6 @@ import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
@@ -77,7 +76,7 @@ public class InsertionSortBinaryTest {
 
     private boolean isSorted(int[] arr) {
         boolean isSorted = true;
-        for (int i = 0; i < arr.length - 1 && isSorted; i++) {
+        for (int i = 0; i < arr.length - 1 && isSorted; ++i) {
             isSorted = arr[i] <= arr[i + 1];
         }
         return isSorted;

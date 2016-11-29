@@ -7,7 +7,7 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         ShellSortTest.class,
         MergeSortTest.class,
-        MergeSortInPlaceSort.class,
+        MergeSortInPlaceTest.class,
         QuickSortTest.class,
         QuickSortRandomTest.class,
         QuickSortBinaryTest.class,

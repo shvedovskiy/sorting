@@ -1,7 +1,7 @@
 package first;
 
 import main.Helper;
-import main.ShellSort;
+import main.MergeSortInPlace;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -10,13 +10,14 @@ import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
 
 
 @RunWith(value = Parameterized.class)
-public class ShellSortTest {
+public class MergeSortInPlaceTest {
     @Rule
     public TestRule watcher = new TestWatcher() {
         protected void starting(final Description description) {
@@ -76,14 +77,14 @@ public class ShellSortTest {
 
     private boolean isSorted(int[] arr) {
         boolean isSorted = true;
-        for (int i = 0; i < arr.length - 1 && isSorted; ++i) {
+        for (int i = 0; i < arr.length - 1 && isSorted; i++) {
             isSorted = arr[i] <= arr[i + 1];
         }
         return isSorted;
     }
 
     @Test
-    public void test01_checkShellSort() throws IOException {
-        Assert.assertTrue(isSorted(ShellSort.shellSort(Arrays.copyOf(array, array.length))));
+    public void test01_checkMergeSortInPlace() throws IOException {
+        Assert.assertTrue(isSorted(MergeSortInPlace.mergeSort(Arrays.copyOf(array, array.length))));
     }
 }

@@ -1,7 +1,7 @@
 package first;
 
-import main.Laba_2.second.ch2.Helper;
-import main.Laba_2.second.ch2.MergeSortInPlace;
+import main.Helper;
+import main.MergeSortInPlace;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;

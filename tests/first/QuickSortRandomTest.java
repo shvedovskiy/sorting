@@ -1,7 +1,7 @@
 package first;
 
-import main.Laba_2.second.ch2.Helper;
-import main.Laba_2.second.ch2.QuickSortRandom;
+import main.Helper;
+import main.QuickSortRandom;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -10,11 +10,9 @@ import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
-
 
 @RunWith(value = Parameterized.class)
 public class QuickSortRandomTest {

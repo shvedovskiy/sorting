@@ -1,7 +1,7 @@
 package first;
 
-import main.Laba_2.second.ch2.Helper;
-import main.Laba_2.second.ch2.LSDLongs;
+import main.Helper;
+import main.LSDLongs;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
